@@ -592,12 +592,6 @@ fetch("https://api.quickbase.com/v1/records", {
       .then((resBody) => Promise.reject({ status: res.status, ...resBody }));
   })
   .catch((err) => console.log(err));
+		window.location.href="https://builderprogram-gsanap.quickbase.com/db/bszvjvx3x?a=dbpage&pageID=28"
 
-    
-
-
-
-  console.log('====================================');
-  console.log();
-  console.log('====================================');
 }
