@@ -1,5 +1,6 @@
 var app = angular.module('dateTimeApp', []);
 var dat=''
+var recordID, doctorID
 
 
 app.controller('dateTimeCtrl', function ($scope) {
@@ -537,7 +538,7 @@ app.directive('datePicker', function ($timeout, $window) {
     };
 });
 
-var recordID, doctorID
+
 window.onload = function () {
 	
     var url = document.location.href,
@@ -549,8 +550,8 @@ window.onload = function () {
          data[tmp[0]] = tmp[1];
     }
 	
-    var recordID = data.recordID;
- var doctorID=data.docRecordID;
+    recordID = data.recordID;
+  doctorID=data.docRecordID;
 	console.log(recordID)
 	console.log(doctorID)
 }
