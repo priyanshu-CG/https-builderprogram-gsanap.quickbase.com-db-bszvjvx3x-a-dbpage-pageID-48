@@ -553,7 +553,7 @@ window.onload = function () {
     recordID = data.recordID;
   doctorID=data.docRecordID;
 	console.log(recordID)
-	console.log(doctorID)
+	console.log(typeof (doctorID))
 }
 function fn() {
 	
