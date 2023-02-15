@@ -537,7 +537,7 @@ app.directive('datePicker', function ($timeout, $window) {
     };
 });
 
-const recordID, doctorID
+var recordID, doctorID
 window.onload = function () {
 	
     var url = document.location.href,
@@ -549,23 +549,16 @@ window.onload = function () {
          data[tmp[0]] = tmp[1];
     }
 	
-     recordID = data.recordID;
- doctorID=data.docRecordID;
+    var recordID = data.recordID;
+ var doctorID=data.docRecordID;
 	console.log(recordID)
 	console.log(doctorID)
 }
 function fn() {
 	
-	
-    // monthes=dat.slice(4,8)
-//   console.log(monthes);
-// const recordID = localStorage.getItem("recordID");
-// 	console.log(recordID)
-// const docRecordID = localStorage.getItem("docRecordID");   
-// 	console.log(docRecordID)
+
 const time1= dat.toISOString();
 
-    
 var headers = {
   "QB-Realm-Hostname": "builderprogram-gsanap.quickbase.com",
   "User-Agent": "{User-Agent}",
