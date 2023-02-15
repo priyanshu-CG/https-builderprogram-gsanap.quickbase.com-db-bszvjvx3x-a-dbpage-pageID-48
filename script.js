@@ -541,7 +541,9 @@ function fn() {
     // monthes=dat.slice(4,8)
 //   console.log(monthes);
 const recordID = localStorage.getItem("recordID");
+	console.log(recordID)
 const docRecordID = localStorage.getItem("docRecordID");   
+	console.log(docRecordID)
 const time1= dat.toISOString();
 
     
