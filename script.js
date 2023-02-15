@@ -537,13 +537,31 @@ app.directive('datePicker', function ($timeout, $window) {
     };
 });
 
+window.onload = function () {
+	
+    var url = document.location.href,
+        params = url.split('?')[1].split('&'),
+        data = {}, tmp;
+	console.log(params)
+    for (var i = 0, l = params.length; i < l; i++) {
+         tmp = params[i].split('=');
+         data[tmp[0]] = tmp[1];
+    }
+	
+    var recordID = data.recordID;
+	var doctorID=data.docRecordID;
+	console.log(recordID)
+	console.log(doctorID)
+}
 function fn() {
+	
+	
     // monthes=dat.slice(4,8)
 //   console.log(monthes);
-const recordID = localStorage.getItem("recordID");
-	console.log(recordID)
-const docRecordID = localStorage.getItem("docRecordID");   
-	console.log(docRecordID)
+// const recordID = localStorage.getItem("recordID");
+// 	console.log(recordID)
+// const docRecordID = localStorage.getItem("docRecordID");   
+// 	console.log(docRecordID)
 const time1= dat.toISOString();
 
     
@@ -558,7 +576,7 @@ var body = {
   data: [
     {
       6: { value: time1 },
-      24: { value: docRecordID },
+      24: { value: doctorID },
       27: { value: recordID },
     },
   ],
