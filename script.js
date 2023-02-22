@@ -625,10 +625,6 @@ function fn() {
     console.log(time1);
   console.log(date1)
   
-  if(receipID == "")
-  window.location.href =  "https://builderprogram-gsanap.quickbase.com/db/bszvjvx3x?a=dbpage&pageID=28";
-  else
-    window.location.href =  "https://builderprogram-gsanap.quickbase.com/db/bszvjvx3x?a=dbpage&pageID=56";
 
   var headers = {
     "QB-Realm-Hostname": "builderprogram-gsanap.quickbase.com",
@@ -665,7 +661,7 @@ function fn() {
           );
       })
       .catch((err) => console.log(err));
-    function navigation()
+  window.location.href =  "https://builderprogram-gsanap.quickbase.com/db/bszvjvx3x?a=dbpage&pageID=28";
     
     // console.log(2134567890)
   } else {
